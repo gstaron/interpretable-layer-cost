@@ -1,6 +1,7 @@
 # interpretable-layer-cost
 A calculator for estimating the _compute_ cost of building a sparse auto-encoder layer into an LLM to make concepts inside such LLM interpretable. Auto-published at https://huge.github.io/interpretable-layer-cost
 
+
 ## Problem Setup
 
 ![MLP activations decomposition into "features"](docs/assets/MLP activations decomposition.png)
@@ -23,6 +24,8 @@ The **superposition hypothesis** suggests that neural networks leverage sparsity
 We employ a **linear encoder with ReLU** and a **linear decoder**, trained with an Adam optimizer, MSE loss, and an L1 penalty for sparsity. Training utilizes 8 billion data points and neuron resampling for coverage.  
 
 This decomposition aims to improve interpretability, enabling targeted input design and deeper understanding of how neural networks process information.
+
+
 
 todo: 
 
